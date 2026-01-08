@@ -1,0 +1,10 @@
+      MILESTONE                         EST TIME       REAL TIME
+1. Create word list.                      15
+2. Load files into data collector         10
+3. Create a loop through posts            10 
+   and compare to the word list 
+4. Create list of pet owners              15
+5. Create a file with the correct         20
+   adverstisment after user name
+6. Remove duplicates                      10
+
