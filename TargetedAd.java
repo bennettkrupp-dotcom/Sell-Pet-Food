@@ -1,6 +1,7 @@
 /*
  * Problem 2.3.1 Sell My Pet Food
  */
+import java.util.ArrayList;
 public class TargetedAd {
 
   public static void main(String[] args)
@@ -33,12 +34,21 @@ public class TargetedAd {
 
 
     /* your code here */
+
+    DataCollector dogCollector = new DataCollector();
+    DataCollector catCollector = new DataCollector();
+
+    dogCollector.setData("socialMediaPostsSmall.txt", "DogTargetWords.txt");
+    catCollector.setData("socialMediaPostsSmall.txt", "CatTargetWords.txt");
+
+    ArrayList<String> catLovers;
+    ArrayList<String> dogLovers;
+  
     
     //Creates a dog and cat data collector with correct data
     //Loops through cat and dog collector creating a list of user who love cats or dogs
     //loop through list of usernames in Cat list and creates cat add
-    //loops through dog list with same file name to check 
-
+    //loops through dog list with same file name adding dog advertisments
 
      
   }
