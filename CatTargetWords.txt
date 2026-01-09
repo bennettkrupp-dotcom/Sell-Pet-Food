@@ -6,3 +6,4 @@ moew
 purr
 feline
 felid
+stray
