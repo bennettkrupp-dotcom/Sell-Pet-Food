@@ -1,0 +1,8 @@
+ cat 
+kitten
+kitty
+whiskers
+moew
+purr
+feline
+felid
