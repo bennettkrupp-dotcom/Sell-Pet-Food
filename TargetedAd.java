@@ -34,6 +34,11 @@ public class TargetedAd {
 
     /* your code here */
     
+    //Creates a dog and cat data collector with correct data
+    //Loops through cat and dog collector creating a list of user who love cats or dogs
+    //loop through list of usernames in Cat list and creates cat add
+    //loops through dog list with same file name to check 
+
 
      
   }
