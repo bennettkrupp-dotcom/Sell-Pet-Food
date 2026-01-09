@@ -12,3 +12,4 @@ loyal
 leash
 kennel
 wolf
+stray
