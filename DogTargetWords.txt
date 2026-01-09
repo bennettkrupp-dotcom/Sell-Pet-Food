@@ -11,3 +11,4 @@ greyhound
 loyal
 leash
 kennel
+wolf
