@@ -35,18 +35,65 @@ public class TargetedAd {
 
     /* your code here */
 
+    //Creates a dog and cat data collector with correct data
+
     DataCollector dogCollector = new DataCollector();
     DataCollector catCollector = new DataCollector();
 
     dogCollector.setData("socialMediaPostsSmall.txt", "DogTargetWords.txt");
     catCollector.setData("socialMediaPostsSmall.txt", "CatTargetWords.txt");
 
-    ArrayList<String> catLovers;
-    ArrayList<String> dogLovers;
+    ArrayList<String> catLovers = new ArrayList<>();
+
+    ArrayList<String> dogLovers = new ArrayList<>();
+
+
+    //Loops through cat and dog collector creating a list of users who love cats or dogs
+    
+    while(true) {
+      String post = dogCollector.getNextPost();
+      if(post.equals("NONE")) {
+        break;
+      }
+      String username = post.split(" ")[0];
+
+      while(true) {
+        String word = dogCollector.getNextTargetWord();
+        if(word.equals("NONE")) {
+        break;
+        }
+        if(post.contains(word)) {
+          dogLovers.add(username);
+        }  
+      }
+    }
+
+    while(true) {
+      String post = catCollector.getNextPost();
+      if(post.equals("NONE")) {
+        break;
+      }
+      String username = post.split(" ")[0];
+
+      while(true) {
+        String word = catCollector.getNextTargetWord();
+        if(word.equals("NONE")) {
+        break;
+        }
+        if(post.contains(word)) {
+          catLovers.add(username);
+        }  
+      }
+    }
+
+
+
+
+    
   
     
-    //Creates a dog and cat data collector with correct data
-    //Loops through cat and dog collector creating a list of user who love cats or dogs
+    
+    
     //loop through list of usernames in Cat list and creates cat add
     //loops through dog list with same file name adding dog advertisments
 
