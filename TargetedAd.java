@@ -20,7 +20,7 @@ public class TargetedAd {
 
 
     //Loops through cat and dog collector creating a list of users who love cats or dogs
-    
+
     while(true) {
       String post = dogCollector.getNextPost();
       if(post.equals("NONE")) {
@@ -57,8 +57,8 @@ public class TargetedAd {
       }
     }
 
-  catCollector.prepareAdvertisement("CatAdvertisement.txt", catLovers, "Your furry friend will love our cat food!");
-  dogCollector.prepareAdvertisement("dogAdvertisement.txt", dogLovers, "Your furry friend will love our dog food!");
+    catCollector.prepareAdvertisement("CatAdvertisement.txt", catLovers, "Your furry friend will love our cat food!");
+    dogCollector.prepareAdvertisement("dogAdvertisement.txt", dogLovers, "Your furry friend will love our dog food!");
 
      
   }
