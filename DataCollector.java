@@ -110,14 +110,14 @@ public class DataCollector
    * @param usernames A string containing the usernames of people to target,
    * usernames are separated by a space.
    */
-  public void prepareAdvertisement(String filename, String usernames, String advertisement)
+  public void prepareAdvertisement(String filename, ArrayList<String> usernames, String advertisement)
   {
     try
     {
       FileWriter fw = new FileWriter(filename);
       // Strin method split splits a string based on the provided token
       // and returns an array of individual substrings
-      for (String un : usernames.split(" "))
+      for (String un : usernames)
       {
           fw.write("@" + un + " " + advertisement +"\n");
       }
