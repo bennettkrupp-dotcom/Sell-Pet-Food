@@ -86,16 +86,8 @@ public class TargetedAd {
       }
     }
 
-
-
-
-    
-  
-    
-    
-    
-    //loop through list of usernames in Cat list and creates cat add
-    //loops through dog list with same file name adding dog advertisments
+  catCollector.prepareAdvertisement("CatAdvertisement.txt", catLovers, "Your furry friend will love our cat food!");
+  dogCollector.prepareAdvertisement("dogAdvertisement.txt", dogLovers, "Your furry friend will love our dog food!");
 
      
   }
