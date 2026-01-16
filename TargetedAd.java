@@ -33,7 +33,7 @@ public class TargetedAd {
         if(word.equals("NONE")) {
         break;
         }
-        if(post.contains(word)) {
+        if(post.contains(word) && !dogLovers.contains(username)) {
           dogLovers.add(username);
         }  
       }
