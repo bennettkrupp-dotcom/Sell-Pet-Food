@@ -13,3 +13,6 @@ leash
 kennel
 wolf
 stray
+husky
+ bark 
+ barks 
